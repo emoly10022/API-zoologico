@@ -46,7 +46,7 @@ class Zoologico:
 
     def atrair_visitantes(self):
         felicidade_total = sum(animal.nivel_felicidade for recinto in self.recintos for animal in recinto.animais)
-        visitantes = felicidade_total // 10  # Supondo que cada 10 pontos de felicidade atraem 1 visitante
+        visitantes = felicidade_total // 10  
         self.visitantes += visitantes
         return visitantes
 
